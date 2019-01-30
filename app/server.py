@@ -8,7 +8,7 @@ from io import BytesIO
 from fastai import *
 from fastai.vision import *
 
-export_file_url = 'https://drive.google.com/uc?export=download&id=1ziDMQK8GrQWlEYl9mwxeTeR2zEjMkZn_'
+export_file_url = 'https://drive.google.com/uc?export=download&id=1HkVhh352DGE-U0nxDINPz1nhxIBI8Kav'
 export_file_name = 'export.pkl'
 
 classes = ['pirelli_pzero', 'pirelli_icezero']
