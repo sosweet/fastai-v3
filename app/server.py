@@ -56,7 +56,7 @@ async def analyze(request):
     prediction_val,pred_idx,outputs = learn.predict(img)
     probabilty = outputs[pred_idx].item()
     if probabilty >= 0.6:
-        prediction = str(prediction_val) + " with a " + str(round(probabilty, ndigits =3)*100) "% probabilty" 
+        prediction = str(prediction_val) + " with " + str(round(probabilty, ndigits =3)*100) + "% probabilty" 
     else:
         prediction = "Not able to classify with high accuracy. The best estimate is " + str(prediction_val)
     return JSONResponse({'result': str(prediction)})
