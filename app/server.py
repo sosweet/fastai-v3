@@ -54,11 +54,11 @@ async def analyze(request):
     img_bytes = await (data['file'].read())
     img = open_image(BytesIO(img_bytes))
     prediction_val,pred_idx,outputs = learn.predict(img)
-    probabilty = outputs[pred_idx].item()
+    probabilty = round(outputs[pred_idx].item(), ndigits = 3)
     if probabilty >= 0.6:
         prediction = str(prediction_val) + " with a probabilty of " + str(probabilty)
     else:
-        prediction = "Not able to classify with high accuracy. The best estimate is" + str(prediction_val) + " with a probabilty of " + str(probabilty)
+        prediction = "Not able to classify with high accuracy. The best estimate is " 
     return JSONResponse({'result': str(prediction)})
 
 if __name__ == '__main__':
