@@ -9,9 +9,9 @@ from fastai import *
 from fastai.vision import *
 
 export_file_url = 'https://www.dropbox.com/s/h7i28y1sts2qp3n/export_152.pkl?dl=1'
-export_file_name = 'export_152.pkl'
+export_file_name = 'export152.pkl'
 
-classes = ['ice-zero-fr','cinturato-winter']
+classes = ['cinturato-winter','winter-sotto-zero-serie']
 path = Path(__file__).parent
 
 app = Starlette()
