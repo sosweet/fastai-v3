@@ -8,10 +8,10 @@ from io import BytesIO
 from fastai import *
 from fastai.vision import *
 
-export_file_url = 'https://drive.google.com/uc?export=download&id=1MNrJA6s3zh4eWLFlOfNjz7FNtpIPfwoH'
-export_file_name = 'export-50.pkl'
+export_file_url = 'https://drive.google.com/uc?export=download&id=1wWc5cC2DozOr-hCH7U-ZaxkNgR9ykX4T'
+export_file_name = 'export_152.pkl'
 
-classes = ['winter-sotto-zero-serie','scorpion-winter','ice-zero-fr','cinturato-winter', 'winter-sottozero-3']
+classes = ['ice-zero-fr','cinturato-winter']
 path = Path(__file__).parent
 
 app = Starlette()
