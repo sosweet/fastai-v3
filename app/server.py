@@ -8,7 +8,7 @@ from io import BytesIO
 from fastai import *
 from fastai.vision import *
 
-export_file_url = 'https://drive.google.com/uc?export=download&id=1wWc5cC2DozOr-hCH7U-ZaxkNgR9ykX4T'
+export_file_url = 'https://www.dropbox.com/s/h7i28y1sts2qp3n/export_152.pkl?dl=1'
 export_file_name = 'export_152.pkl'
 
 classes = ['ice-zero-fr','cinturato-winter']
